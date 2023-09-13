@@ -1,0 +1,33 @@
+.NavUl{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+body{
+background-color: black;
+}
+
+
+.logoSvgNav{
+  padding-right: 70px;
+
+}
+
+.simpleLiNav{
+display: flex;
+align-items: center;
+justify-content: center;
+padding-right: 30px;
+
+
+}
+
+.simpleLiNav a{
+  text-decoration: none;
+  color: white;
+}
+.simpleLiNav a:hover{
+  color: #F7CD1E;
+  font-weight: 500px;
+
+}
