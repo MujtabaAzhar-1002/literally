@@ -7,6 +7,7 @@
 }
 body {
   counter-reset: section;
+  counter-reset: sectionSec;
 }
 .NavUl{
   display: flex;
@@ -364,6 +365,187 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 margin-right: 15px;
+}
+
+
+/* Home */
+.aboutUsDivHome{
+  display: flex;
+  flex-direction: row;
+}
+.relativePositionDiv{
+  position: relative;
+  display: flex;
+align-items: center;
+justify-content: center;
+}
+.yellowBox{
+  width: 398px;
+height: 577px;
+flex-shrink: 0;
+/* position: absolute; */
+background: #F7CD1E;
+z-index: -1;
+}
+.yellowline{
+  background: #F7CD1E;
+  width: 142px;
+  height: 10px;
+  flex-shrink: 0;
+  position: absolute;
+  top: 0;
+  left: 0; 
+  right: 0
+}
+
+.aboutUsImg img{
+  width: auto;
+  height: 414px;
+flex-shrink: 0;
+border-radius: 5px;
+position: absolute;
+top:70px;
+
+right: -150px;
+
+}
+.textAboutUs{
+  position: relative;
+  margin-left: 180px;
+  
+}
+.imgAndHeadingAboutUs{
+  display: flex;
+  flex-direction: row;
+  margin-top: 45px;
+  margin-bottom: 40px;
+}
+.imgAndHeadingAboutUs svg{
+  padding-right: 15px;
+}
+.aboutUsDivMainHeading{
+  color: #F7CD1E;
+  font-family: 'Oswald', sans-serif;
+font-size: 112px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.afterHeadingPara{
+  color: #979797;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+}
+.aboutUsMiniHeadings{
+  color: #000;
+  font-family: 'Oswald', sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.generalParaAboutUs{
+  color: #979797;
+  font-family: 'Oswald', sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 80%;
+}
+
+.genralMainHeadingForHome{
+  color: #F7CD1E;
+  font-family: 'Oswald', sans-serif;
+font-size: 112px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-top: 10px;
+position: relative;
+margin-left: 65px;
+}
+
+.ourServicesDiv{
+  margin-top: 90px;
+}
+.dataDivServices{
+  width: 100%;
+height: 468px;
+flex-shrink: 0;
+background-color: #000;
+margin-top: 40px;
+position: relative;
+z-index: -11;
+display: flex;
+flex-direction: row;
+align-items: center;
+
+}
+.ourServicesDivImg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -10;
+}
+.yellowCicleDiv{
+  width: 281px;
+height: 281px;
+flex-shrink: 0;
+border-radius: 281px;
+background: #F7CD1E;
+margin-left: 50px;
+}
+.especialClassCounterPart2 {
+  color: #000;
+  font-family: Oswald;
+  font-size: 112px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+display: flex;
+align-items: center;
+justify-content: center;
+padding-top: 50px; 
+}
+
+.especialClassCounterPart2::before {
+  counter-increment: sectionSec;
+  content: "0" counter(sectionSec);
+  
+}
+
+.servicesDivText{
+  width: 682px;
+min-height: 175px;
+flex-shrink: 0;
+border-radius: 10px;
+background: #FFF;
+padding: 40px;
+margin-left: 100px;
+}
+
+.servicesDivTextHeading{
+  color: #F7CD1E;
+  font-family: Oswald;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.servicesDivTextPara{
+  color: #979797;
+  font-family: Oswald;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 10px;
+  width: 80%;
 }
 @media (max-width:766px) {
   .searchAndSelect{
