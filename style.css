@@ -775,6 +775,14 @@ line-height: normal;
 .verticleInfoDiv{
   margin-left: 20px;
 }
+@media (max-width:1062px) {
+  .searchBlogDetail{
+    margin-left: 2%;
+  }
+  .selectorBlog{
+    margin-right: 2%;
+  }
+}
 @media (max-width:766px) {
   .searchAndSelect{
     flex-direction: column;
@@ -797,6 +805,9 @@ line-height: normal;
   }
   .latestPodcastContentHeading{
     margin-top: 10px;
+  }
+  .searchAndSelect{
+    align-items: center;
   }
 
   @media (max-width:555px) {
