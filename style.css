@@ -137,6 +137,7 @@ width: 566px;
 z-index: 999999;
 }
 .center-div{
+  background-color: #FFF;
 display: flex;
 justify-content: center;
   padding: 40px;
@@ -144,10 +145,10 @@ justify-content: center;
   width: 80%;
 height: 1120px;
 border-radius: 10px;
-top: -20rem;
+top: -9rem;
 position: relative;
 z-index: 999;
-box-shadow: 1px 1px 20px black;
+box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.41);
 
 }
 .searchBlogDetail{
