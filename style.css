@@ -7,12 +7,13 @@
 }
 body {
   counter-reset: sectionSec;
-  
+  /* overflow-x: hidden; */
   
   
 }
 html{
   counter-reset: section;
+  /* overflow-x: hidden; */
 }
 nav{
   z-index: 69;
@@ -140,10 +141,11 @@ z-index: 999999;
   background-color: #FFF;
 display: flex;
 justify-content: center;
+flex-direction: column;
   padding: 40px;
   margin: 0 auto !important;
   width: 80%;
-height: 1120px;
+height: auto;
 border-radius: 10px;
 top: -9rem;
 position: relative;
@@ -297,8 +299,8 @@ line-height: normal;
   margin: 10px 0px;
 }
 .mainDataDivEnclosed{
-  margin-right: 70px;
-  margin-left: 70px;
+  /* margin-right: 70px;
+  margin-left: 70px; */
   display: flex;
   flex-direction: row-reverse;
   gap:10px;
@@ -453,6 +455,46 @@ margin-right: 15px;
 
 
 /* Home */
+.centerDivTop{
+  display: flex;
+  flex-direction: row;
+ align-items: center;
+ height: 171px;
+ width: 90%;
+ justify-content: space-between;
+ border-bottom: 1px solid #D2D2D2;
+}
+.buttonViewAll{
+  border-radius: 5px;
+border: 1px solid #F7CD1E;
+width: 131px;
+height: 52px;
+flex-shrink: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.centerDivBody{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.topHeadButtonHeading{
+  color: #000;
+font-family: Oswald;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.centerDivTopHeadinf{
+  color: #000;
+font-family: Oswald;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
 .aboutUsDivHome{
   display: flex;
   flex-direction: row;
@@ -668,6 +710,13 @@ margin-top: 30px;
   color: black;
 
 }
+.buttonViewAll:hover .topHeadButtonHeading{
+  background: #F7CD1E;
+}
+.buttonViewAll:hover,.aboutUsSubmitBtn:hover{
+  background: #F7CD1E;
+
+}
 .svgClass{
   fill:#F7CD1E;
 }
@@ -758,6 +807,7 @@ line-height: normal;
 }
 .inputSection textarea:focus {
     outline: none;
+    border-bottom: 1px solid #F7CD1E;
 }
 
 
