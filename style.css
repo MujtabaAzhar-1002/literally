@@ -649,7 +649,7 @@ padding-top: 50px;
 }
 
 .servicesDivText{
-  width: 682px;
+  width: 46%;
 min-height: 175px;
 flex-shrink: 0;
 border-radius: 10px;
@@ -828,7 +828,7 @@ line-height: normal;
 background: #000;
 width: 505px;
 min-height: 461px;
-flex-shrink: 0;
+flex-shrink: 1;
 z-index: 1;
 align-items: center;
 }
@@ -846,7 +846,9 @@ font-size: 20px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-margin-top: 45px;
+margin-top: 40px;
+margin-bottom: 40px;
+
 }
 .horizentalInfoDiv{
   display: flex;
@@ -884,10 +886,72 @@ line-height: normal;
   .selectorBlog{
     margin-right: 2%;
   }
+  .inputSection input{
+    width: 340px;
+  }
+  .inputSection textarea{
+    width: 340px;
+  }
+  .inputSection{
+    width: 340px;
+  }
+}
+@media (max-width:1000px) {
+  .dataDivServices{
+    flex-direction: column;
+    height: auto;
+  }
+  .servicesDivText{
+    margin: 10px;
+  }
+  .infoDiv {
+
+    width: 385px;
+  }
+  .aboutUsDivHome{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .yellowBox{
+    position: absolute;
+    margin-top: 400px;
+   
+  }
+  .aboutUsDivHome{
+    position: relative;
+  }
+  .aboutUsImg img{
+
+  top:0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  
+  }
+  .textAboutUs{
+  margin-top: 550px;
+  }
+  .dataDivContainer{
+    width: calc(30%);
+  }
+  
 }
 @media (max-width:766px) {
   .searchAndSelect{
     flex-direction: column;
+  }
+  .formAndInfo {
+    flex-direction: column;
+  }
+  .textAboutUs{
+    margin-left:0;
+  width: 60%;
+    }
+    .aboutUsDivMainHeading,.genralMainHeadingForHome{
+      font-size: 80px;
+    }
+  .dataDivContainer{
+    width: calc(40%);
   }
   .searchBlogDetail{
     margin-bottom: 20px;
