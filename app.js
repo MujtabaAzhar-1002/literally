@@ -25,7 +25,7 @@ const ExpressError = require('./utils/ExpressError');
 
 // Varibales
 const PORT = process.env.PORT || 3000;
-const mongoURi = process.env.MONGO_URI || 'mongodb://localhost:27017/literally';
+const mongoURi = 'mongodb://0.0.0.0:27017/literally';
 const secret = 'thisisnotagoodsecret';
 const store = new MongoDBStore({
     mongoUrl: mongoURi,

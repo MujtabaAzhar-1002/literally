@@ -6,6 +6,7 @@
   padding: 0;
 }
 body {
+  font-family: 'Oswald', sans-serif;
   counter-reset: sectionSec;
   /* overflow-x: hidden; */
   
@@ -38,18 +39,22 @@ display: flex;
 align-items: center;
 justify-content: center;
 padding-right: 30px;
-
-
 }
+
 .simpleLiNav a{
   
   text-decoration: none;
   color: white;
+  font-size: 18px;
 }
 .simpleLiNav a:hover{
-  color: #F7CD1E;
+  color: #F7CD1E ;
   font-weight: 500px;
 
+}
+.active{
+  color: #F7CD1E !important;
+  font-weight: 600px !important;
 }
 .most-recent-div{
   float: right;
@@ -309,6 +314,7 @@ line-height: normal;
  justify-content: space-around;
  align-items: flex-start;
  width: 100%;
+ padding-bottom: 50px;
 
 }
 

@@ -9,21 +9,25 @@ const Blog = mongoose.model('Blog');
 
 
 // Homepage Routes
-// router.get('/', wrapAsync(async (req, res) => {
-//     const instaPosts = await Insta.find({});
-//     const youtubePosts = await Youtube.find({});
-//     const blogs = await Blog.find({});
-//     res.render('./homepages/index', { instaPosts, youtubePosts, blogs });
-// }));
+router.get('/sir', wrapAsync(async (req, res) => {
+    const instaPosts = await Insta.find({});
+    const youtubePosts = await Youtube.find({});
+    const blogs = await Blog.find({});
+    res.render('./homepages/home', { instaPosts, youtubePosts, blogs });
+}));
 // Homepage blogdetail
+router.get('/latestpodcast', wrapAsync(async (req, res) => {
+    res.render('./homepages/latestPodcast');
+}));
 router.get('/blogdetail', wrapAsync(async (req, res) => {
     res.render('./homepages/blogdetail');
 }));
 
 // Homepage index
 router.get('/', wrapAsync(async (req, res) => {
-    res.render('./homepages/home');
+    res.render('./homepages/index');
 }));
+
 
 
 // Exporting the router
