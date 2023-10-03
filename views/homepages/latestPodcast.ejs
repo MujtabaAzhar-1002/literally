@@ -22,72 +22,30 @@
 <!-- Other Data -->
 
 <div class="enclosedLatestPodcastDivs">
-<div class="latestPodcastContentContainer">
-
-    <h1 class="especialClassCounter"></h1>
-
-
-    <img class="imgLatestPodcast" src="/images/Rectangle 10.png" alt="">
-
-    <div class="contentPartLatestPodcast">
-        <h2 class="latestPodcastContentHeading">Podcast name</h2>
-
-        <p class="latestPodcastContentPara">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since. </p>
-
-        <h3 class="latestPdcastDetail">10 SEP, 2023 - 30 min - 9 Episode </h3>
-
-        <div class="likeAndListen">
-            <p><i class='bx bxs-heart' style='color:#f7cd1e'  ></i> 10.5K</p>
-            <p><i class='bx bx-headphone' style='color:#f7cd1e' ></i> 10.5K</p>
-            
+    <% PodcastPosts.map(({name, description ,detail,url, view,imagePath,heart}) => { %>
+        <div class="latestPodcastContentContainer">
+  
+          <h1 class="especialClassCounter"></h1>
+  
+         <a href="<%=url %>" target="_blank"> <img class="imgLatestPodcast" src="<%=imagePath %>" alt=""> </a>
+  
+          <div class="contentPartLatestPodcast">
+            <h2 class="latestPodcastContentHeading"><%=name %></h2>
+  
+            <p class="latestPodcastContentPara"><%=description %></p>
+  
+            <h3 class="latestPdcastDetail"><%=detail %></h3>
+  
+            <div class="likeAndListen">
+              <p><i class='bx bxs-heart' style='color:#f7cd1e'></i> <%=heart %></p>
+              <p><i class='bx bx-headphone' style='color:#f7cd1e'></i> <%=view %></p>
+  
+            </div>
+          </div>
         </div>
-    </div>
-</div>
+        <% }) %>
+  
 
-<!--  -->
-<div class="latestPodcastContentContainer">
 
-    <h1 class="especialClassCounter"></h1>
-
-    <img class="imgLatestPodcast" src="/images/Rectangle 10.png" alt="">
-
-    <div class="contentPartLatestPodcast">
-        <h2 class="latestPodcastContentHeading">Podcast name</h2>
-
-        <p class="latestPodcastContentPara">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since. </p>
-
-        <h3 class="latestPdcastDetail">10 SEP, 2023 - 30 min - 9 Episode </h3>
-
-        <div class="likeAndListen">
-            <p><i class='bx bxs-heart' style='color:#f7cd1e'  ></i> 10.5K</p>
-            <p><i class='bx bx-headphone' style='color:#f7cd1e' ></i> 10.5K</p>
-            
-        </div>
-    </div>
-</div>
-<!--  -->
-<div class="latestPodcastContentContainer">
-
-    <h1 class="especialClassCounter"></h1>
-
-    <img class="imgLatestPodcast" src="/imges/Rectangle 10.png" alt="">
-
-    <div class="contentPartLatestPodcast">
-        <h2 class="latestPodcastContentHeading">Podcast name</h2>
-
-        <p class="latestPodcastContentPara">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since. </p>
-
-        <h3 class="latestPdcastDetail">10 SEP, 2023 - 30 min - 9 Episode </h3>
-
-        <div class="likeAndListen">
-            <p><i class='bx bxs-heart' style='color:#f7cd1e'  ></i> 10.5K</p>
-            <p><i class='bx bx-headphone' style='color:#f7cd1e' ></i> 10.5K</p>
-            
-        </div>
-    </div>
-</div>
 </div>
 <%- include('../partials/footer') %>

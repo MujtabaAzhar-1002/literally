@@ -17,15 +17,20 @@ router.get('/sir', wrapAsync(async (req, res) => {
 }));
 // Homepage blogdetail
 router.get('/latestpodcast', wrapAsync(async (req, res) => {
-    res.render('./homepages/latestPodcast');
+    const PodcastPosts = await Youtube.find({});
+    res.render('./homepages/latestPodcast',{PodcastPosts});
 }));
 router.get('/blogdetail', wrapAsync(async (req, res) => {
-    res.render('./homepages/blogdetail');
+    const blogs = await Blog.find({});
+    res.render('./homepages/blogdetail',{blogs});
 }));
 
 // Homepage index
 router.get('/', wrapAsync(async (req, res) => {
-    res.render('./homepages/index');
+    const ServicePosts = await Insta.find({});
+    const PodcastPosts = await Youtube.find({});
+    const blogs = await Blog.find({});
+    res.render('./homepages/index', { ServicePosts, PodcastPosts, blogs });
 }));
 
 

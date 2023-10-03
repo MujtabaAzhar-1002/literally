@@ -27,132 +27,31 @@
       </div>
     </div>
     <div class="centerDivBody">
+      <% PodcastPosts.map(({name, description ,detail,url, view,imagePath,heart}) => { %>
       <div class="latestPodcastContentContainer">
 
         <h1 class="especialClassCounter"></h1>
 
-        <img class="imgLatestPodcast" src="/images/Rectangle 10.png" alt="">
+       <a href="<%=url %>" target="_blank"> <img class="imgLatestPodcast" src="<%=imagePath %>" alt=""> </a>
 
         <div class="contentPartLatestPodcast">
-          <h2 class="latestPodcastContentHeading">Podcast name</h2>
+          <h2 class="latestPodcastContentHeading"><%=name %></h2>
 
-          <p class="latestPodcastContentPara">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since. </p>
+          <p class="latestPodcastContentPara"><%=description %></p>
 
-          <h3 class="latestPdcastDetail">10 SEP, 2023 - 30 min - 9 Episode </h3>
+          <h3 class="latestPdcastDetail"><%=detail %></h3>
 
           <div class="likeAndListen">
-            <p><i class='bx bxs-heart' style='color:#f7cd1e'></i> 10.5K</p>
-            <p><i class='bx bx-headphone' style='color:#f7cd1e'></i> 10.5K</p>
+            <p><i class='bx bxs-heart' style='color:#f7cd1e'></i> <%=heart %></p>
+            <p><i class='bx bx-headphone' style='color:#f7cd1e'></i> <%=view %></p>
 
           </div>
         </div>
       </div>
-      <div class="latestPodcastContentContainer">
+      <% }) %>
 
-        <h1 class="especialClassCounter"></h1>
-
-        <img class="imgLatestPodcast" src="/images/Rectangle 10.png" alt="">
-
-        <div class="contentPartLatestPodcast">
-          <h2 class="latestPodcastContentHeading">Podcast name</h2>
-
-          <p class="latestPodcastContentPara">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since. </p>
-
-          <h3 class="latestPdcastDetail">10 SEP, 2023 - 30 min - 9 Episode </h3>
-
-          <div class="likeAndListen">
-            <p><i class='bx bxs-heart' style='color:#f7cd1e'></i> 10.5K</p>
-            <p><i class='bx bx-headphone' style='color:#f7cd1e'></i> 10.5K</p>
-
-          </div>
-        </div>
-      </div>
-      <div class="latestPodcastContentContainer">
-
-        <h1 class="especialClassCounter"></h1>
-
-        <img class="imgLatestPodcast" src="/images/Rectangle 10.png" alt="">
-
-        <div class="contentPartLatestPodcast">
-          <h2 class="latestPodcastContentHeading">Podcast name</h2>
-
-          <p class="latestPodcastContentPara">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since. </p>
-
-          <h3 class="latestPdcastDetail">10 SEP, 2023 - 30 min - 9 Episode </h3>
-
-          <div class="likeAndListen">
-            <p><i class='bx bxs-heart' style='color:#f7cd1e'></i> 10.5K</p>
-            <p><i class='bx bx-headphone' style='color:#f7cd1e'></i> 10.5K</p>
-
-          </div>
-        </div>
-      </div>
-      <div class="latestPodcastContentContainer">
-
-        <h1 class="especialClassCounter"></h1>
-
-        <img class="imgLatestPodcast" src="/images/Rectangle 10.png" alt="">
-
-        <div class="contentPartLatestPodcast">
-          <h2 class="latestPodcastContentHeading">Podcast name</h2>
-
-          <p class="latestPodcastContentPara">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since. </p>
-
-          <h3 class="latestPdcastDetail">10 SEP, 2023 - 30 min - 9 Episode </h3>
-
-          <div class="likeAndListen">
-            <p><i class='bx bxs-heart' style='color:#f7cd1e'></i> 10.5K</p>
-            <p><i class='bx bx-headphone' style='color:#f7cd1e'></i> 10.5K</p>
-
-          </div>
-        </div>
-      </div>
-      <div class="latestPodcastContentContainer">
-
-        <h1 class="especialClassCounter"></h1>
-
-        <img class="imgLatestPodcast" src="/images/Rectangle 10.png" alt="">
-
-        <div class="contentPartLatestPodcast">
-          <h2 class="latestPodcastContentHeading">Podcast name</h2>
-
-          <p class="latestPodcastContentPara">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since. </p>
-
-          <h3 class="latestPdcastDetail">10 SEP, 2023 - 30 min - 9 Episode </h3>
-
-          <div class="likeAndListen">
-            <p><i class='bx bxs-heart' style='color:#f7cd1e'></i> 10.5K</p>
-            <p><i class='bx bx-headphone' style='color:#f7cd1e'></i> 10.5K</p>
-
-          </div>
-        </div>
-      </div>
-      <div class="latestPodcastContentContainer">
-
-        <h1 class="especialClassCounter"></h1>
-
-        <img class="imgLatestPodcast" src="/images/Rectangle 10.png" alt="">
-
-        <div class="contentPartLatestPodcast">
-          <h2 class="latestPodcastContentHeading">Podcast name</h2>
-
-          <p class="latestPodcastContentPara">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since. </p>
-
-          <h3 class="latestPdcastDetail">10 SEP, 2023 - 30 min - 9 Episode </h3>
-
-          <div class="likeAndListen">
-            <p><i class='bx bxs-heart' style='color:#f7cd1e'></i> 10.5K</p>
-            <p><i class='bx bx-headphone' style='color:#f7cd1e'></i> 10.5K</p>
-
-          </div>
-        </div>
-      </div>
+  
+     
     </div>
 
   </div>
@@ -227,42 +126,18 @@
   <div class="ourServicesDiv" id="services">
     <h1 class="genralMainHeadingForHome">Our services <div class="yellowline"></div>
     </h1>
+    <% ServicePosts.map(({name, description,imagePath}) => { %>
     <div class="dataDivServices">
-      <img class="ourServicesDivImg" src="/images/Rectangle 21.png" alt="">
+      <img class="ourServicesDivImg" src="<%=imagePath %>" alt="">
       <div class="yellowCicleDiv">
         <h3 class="especialClassCounterPart2"></h3>
       </div>
       <div class="servicesDivText">
-        <h3 class="servicesDivTextHeading">Product Photography</h3>
-        <p class="servicesDivTextPara">Over 10 years working in IT services developing software applications and mobile
-          apps
-          for clients globally.</p>
+        <h3 class="servicesDivTextHeading"><%=name %></h3>
+        <p class="servicesDivTextPara"><%=description %></p>
       </div>
     </div>
-    <div class="dataDivServices">
-      <img class="ourServicesDivImg" src="/images/Rectangle 24.png" alt="">
-      <div class="yellowCicleDiv">
-        <h3 class="especialClassCounterPart2"></h3>
-      </div>
-      <div class="servicesDivText">
-        <h3 class="servicesDivTextHeading">Web development</h3>
-        <p class="servicesDivTextPara">Over 10 years working in IT services developing software applications and mobile
-          apps
-          for clients globally.</p>
-      </div>
-    </div>
-    <div class="dataDivServices">
-      <img class="ourServicesDivImg" src="/images/Rectangle 33.png" alt="">
-      <div class="yellowCicleDiv">
-        <h3 class="especialClassCounterPart2"></h3>
-      </div>
-      <div class="servicesDivText">
-        <h3 class="servicesDivTextHeading">Product Marketing</h3>
-        <p class="servicesDivTextPara">Over 10 years working in IT services developing software applications and mobile
-          apps
-          for clients globally.</p>
-      </div>
-    </div>
+    <% }) %>
   </div>
 
   <!-- blogs -->
@@ -270,25 +145,24 @@
     <h1 class="genralMainHeadingForHome">Blogs<div class="yellowline"></div>
     </h1>
     <div class="mainDataDivEnclosed spaceBW forhomeBlog">
+      <% blogs.map(({name, description ,date,url, from,imagePath}) => { %>
       <div class="dataDivContainer">
-        <img class="imgContainer" src="/images/Rectangle 93.png" alt="">
+        <img class="imgContainer" src="<%=imagePath %>" alt="">
         <div class="headingdataDiv">
-          <h2>Heading</h2>
-          <h3>12 sep,2023</h3>
+          <h2><%=name %></h2>
+          <h3><%=date %></h3>
         </div>
-        <p class="textgdataDiv">Over 10 years working in IT services developing
-          software applications and mobile apps for clients
-          globally. Over 10 years working in IT services
-          developing software applications and mobile apps
-          for clients globally.</p>
+        <p class="textgdataDiv"><%=description %></p>
         <div class="bottomdataDiv">
-          <h2>By tabish waheed</h2>
+          <h2><%=from %></h2>
+          <a href="<%=url%>" target="_blank">
           <h3>Read more <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
               <path d="M9 0L7.41375 1.58625L13.6912 7.875H0V10.125H13.6912L7.41375 16.4137L9 18L18 9L9 0Z"
                 fill="#F7CD1E" />
-            </svg></h3>
+            </svg></h3> </a>
         </div>
       </div>
+      <% }) %>
       <div class="dataDivContainer">
         <img class="imgContainer" src="/images/Rectangle 93.png" alt="">
         <div class="headingdataDiv">

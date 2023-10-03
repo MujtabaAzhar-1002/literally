@@ -1,12 +1,13 @@
 const mongoose = require('mongoose');
 
 const blogSchema = new mongoose.Schema({
-    title: String,
+    name: String,
     description: String,
-    image: {
-        filename: String,
-        path: String
-    }
+    date: String,
+    url: String,
+    from: String,
+    imageFilename: String, 
+    imagePath: String, 
 });
 
 module.exports = mongoose.model('Blog', blogSchema);
